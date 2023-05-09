@@ -1,0 +1,38 @@
+.sidebar{
+    height: 90vh;
+}
+.sidebar li{
+    margin-bottom: 1em;
+    font-size: 14px;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+
+.active{
+    color: #4DB47C !important;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar-logo{
+        display: none;
+    }
+
+    .sidebar li{
+       display: inline-block;
+       margin: 0 auto;
+    }
+    .sidebar{
+        height: 10vh;
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .sidebar{
+        flex-direction: row;
+    }
+}
+

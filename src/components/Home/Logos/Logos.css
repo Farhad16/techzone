@@ -1,0 +1,9 @@
+.logo{
+    width: 100%;
+    position: relative;
+}
+
+.logo img{
+    width: 100px;
+    height: 40px;
+}
