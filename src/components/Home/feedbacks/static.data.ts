@@ -1,42 +1,59 @@
-import customer1 from "../../../assets/feedbacks/customer-1.png";
-import customer2 from "../../../assets/feedbacks/customer-2.png";
-import customer3 from "../../../assets/feedbacks/customer-3.png";
+import customer1 from "../../../assets/feedbacks/cs-m1.png";
+import customer2 from "../../../assets/feedbacks/cs-m2.png";
+import customer3 from "../../../assets/feedbacks/cs-m3.png";
+import customer4 from "../../../assets/feedbacks/cs-m4.png";
+import customer5 from "../../../assets/feedbacks/cs1.png";
+import customer6 from "../../../assets/feedbacks/cs2.png";
+import customer7 from "../../../assets/feedbacks/cs3.png";
 
 export const feedbacks = [
   {
-    name: "Lita henry",
+    name: "David villa",
     description:
-      "We provide you native mobile app. This application will be available both android and IOS",
+      "Very happy to work with techzone, satisfied with their work and services",
     img: customer1,
+    rating: 4.5,
+  },
+  {
+    name: "Jolly",
+    description:
+      "Good to work with them, overall service is good, will want to work again in another project.",
+    img: customer7,
+    rating: 4,
   },
   {
     name: "Austin tim",
     description:
-      "Responsive web application can be accessible from any device and also from any browser.",
+      "They are absolutely amazing with their service and highly recommended to work with them.",
     img: customer2,
+    rating: 5,
+  },
+  {
+    name: "Jesica jesi",
+    description:
+      "I love their customer service and after product sell service, very happy to work with.",
+    img: customer5,
+    rating: 5,
   },
   {
     name: "Mark wood",
     description:
-      "High performance desktop application not only for Window but also for linux operating system",
+      "Top notch product quality not only from user perspective but also product quality.",
     img: customer3,
+    rating: 5,
   },
   {
-    name: "Lita henry",
-    description:
-      "We provide you native mobile app. This application will be available both android and IOS",
-    img: customer1,
+    name: "Tim david",
+    description: "Their service is good enough though takes 3-4 times review",
+    img: customer4,
+    rating: 4.5,
   },
+
   {
-    name: "Austin tim",
+    name: "Ronda rose",
     description:
-      "Responsive web application can be accessible from any device and also from any browser.",
-    img: customer2,
-  },
-  {
-    name: "Mark wood",
-    description:
-      "High performance desktop application not only for Window but also for linux operating system",
-    img: customer3,
+      "Their developers are amazing, they explain the product feature very easily.",
+    img: customer6,
+    rating: 4,
   },
 ];

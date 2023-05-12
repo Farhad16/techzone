@@ -10,7 +10,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import React, { useEffect } from "react";
+import useScrollSectionById from "../../../hooks/useScrollById";
 import { Link } from "react-router-dom";
+
 import { css, tw } from "twind/css";
 
 const pages = [
@@ -24,6 +26,7 @@ function NavSection() {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<any>(null);
   const [scroll, setScroll] = React.useState<any>(false);
+  const { scroll: scrollSection } = useScrollSectionById();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -72,7 +75,7 @@ function NavSection() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            onClick={() => scrollSection("home")}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -81,6 +84,7 @@ function NavSection() {
               letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
+              cursor: "pointer",
             }}
             className=" flex flex-row items-center font-bold"
           >
@@ -127,7 +131,13 @@ function NavSection() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page.name}
+                  onClick={() => {
+                    handleCloseNavMenu();
+                    scrollSection(page.id);
+                  }}
+                >
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -166,8 +176,11 @@ function NavSection() {
             {pages.map((page) => (
               <p
                 key={page.name}
-                onClick={handleCloseNavMenu}
                 className="px-4 text-base hover:text-transparent hover:text-base bg-clip-text bg-gradient-to-r from-[#18c8fd] to-purple-600 font-medium transition duration-300 ease-in-out cursor-pointer"
+                onClick={() => {
+                  handleCloseNavMenu();
+                  scrollSection(page.id);
+                }}
               >
                 {page.name}
               </p>

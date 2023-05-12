@@ -6,10 +6,10 @@ import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Techzone - About</title>
-      </Helmet>
-      <div className="py-6 text-black mt-5">
+      </Helmet> */}
+      <div className="py-6 text-black mt-5" id="about">
         <Container maxWidth="lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex flex-col gap-6 justify-center">
