@@ -15,7 +15,7 @@ const Feedbacks = () => {
       <Helmet>
         <title>Techzone - Feedbacks</title>
       </Helmet>
-      <div className="py-6 text-black" id="services">
+      <div className="py-6 text-black" id="review">
         <Container maxWidth="lg" className="justify-center my-5">
           <h2 className="font-bold text-center py-6 text-4xl capitalize mt-4 mb-6">
             <span style={{ color: "#111430" }}>Client's</span>{" "}

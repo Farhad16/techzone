@@ -64,3 +64,7 @@ code {
     -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
   transition: all 0.3s ease-in-out;
 }
+
+textarea::placeholder {
+  font-size: 14px;
+}

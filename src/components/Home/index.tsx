@@ -4,6 +4,7 @@ import Header from "./header/Header";
 import Logos from "./logos/Logos";
 import Services from "./services";
 import Feedbacks from "./feedbacks";
+import WriteFeedback from "./write-feedback";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Services />
       <About />
       <Feedbacks />
+      <WriteFeedback />
     </div>
   );
 };
