@@ -48,7 +48,7 @@ function FormInput({
             />
           )}
         />
-        {error && <p className="font-semibold errorColor">{error}</p>}
+        {error && <p className="font-semibold text-red-500 text-sm">{error}</p>}
       </div>
     </div>
   );

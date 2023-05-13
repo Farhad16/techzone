@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 import { css, tw } from "twind/css";
 
-const pages = [
+export const pages = [
   { name: "About", id: "about" },
   { name: "Services", id: "services" },
   { name: "Review", id: "review" },

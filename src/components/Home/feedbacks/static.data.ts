@@ -9,49 +9,49 @@ import customer7 from "../../../assets/feedbacks/cs3.png";
 export const feedbacks = [
   {
     name: "David villa",
-    description:
+    comment:
       "Very happy to work with techzone, satisfied with their work and services",
     img: customer1,
     rating: 4.5,
   },
   {
     name: "Jolly",
-    description:
+    comment:
       "Good to work with them, overall service is good, will want to work again in another project.",
     img: customer7,
     rating: 4,
   },
   {
     name: "Austin tim",
-    description:
+    comment:
       "They are absolutely amazing with their service and highly recommended to work with them.",
     img: customer2,
     rating: 5,
   },
   {
     name: "Jesica jesi",
-    description:
+    comment:
       "I love their customer service and after product sell service, very happy to work with.",
     img: customer5,
     rating: 5,
   },
   {
     name: "Mark wood",
-    description:
+    comment:
       "Top notch product quality not only from user perspective but also product quality.",
     img: customer3,
     rating: 5,
   },
   {
     name: "Tim david",
-    description: "Their service is good enough though takes 3-4 times review",
+    comment: "Their service is good enough though takes 3-4 times review",
     img: customer4,
     rating: 4.5,
   },
 
   {
     name: "Ronda rose",
-    description:
+    comment:
       "Their developers are amazing, they explain the product feature very easily.",
     img: customer6,
     rating: 4,

@@ -2,8 +2,6 @@ import { Avatar } from "@mui/material";
 import Rating from "@mui/material/Rating";
 
 const SingleFeedback = ({ name, comment, img, rating }: any) => {
-  const floor = Math.floor(rating);
-
   return (
     <div className="flex flex-col bg-slate-300 rounded-xl p-6 space-y-2 shadow-sm min-h-[170px] sm:min-h-[160px]">
       <div className="flex flex-row items-center gap-4">

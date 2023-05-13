@@ -31,7 +31,7 @@ function WriteFeedback() {
       setLoading(false);
     }
   };
-  console.log(value);
+
   return (
     <div className="py-6 text-black mt-5" id="about">
       <Container maxWidth="lg">
@@ -66,7 +66,7 @@ function WriteFeedback() {
                 },
               }}
               name="email"
-              placeholder="Enter your email email"
+              placeholder="Write your email email"
               type="email"
             />
             <FormInput
@@ -76,24 +76,24 @@ function WriteFeedback() {
               }}
               error={errors?.name?.message || ""}
               name="name"
-              placeholder="Enter your full name"
+              placeholder="Write your full name"
               type="text"
               control={control}
             />
             <FormInput
               label="Your comment *"
               rules={{
-                required: { message: "Name is required", value: true },
+                required: { message: "Comment is required", value: true },
               }}
-              error={errors?.name?.message || ""}
+              error={errors?.comment?.message || ""}
               name="comment"
-              placeholder="Enter your comment"
+              placeholder="Write your comment"
               type="text"
               control={control}
               rows={4}
             />
-            <div className="flex flex-row">
-              <span className="font-semibold">Rate our service - </span>
+            <div className="flex flex-row items-center">
+              <span className="font-semibold">Rate our Service - </span>
               <Rating
                 name="simple-controlled"
                 value={value}
@@ -105,7 +105,7 @@ function WriteFeedback() {
             </div>
             <div className="text-center">
               <button
-                className="transition duration-300 ease-in-out bg-[crimson] font-semibold h-[45px] rounded-md text-white hover:scale-[1.02] w-[100px]"
+                className="focus:outline-none transition duration-300 ease-in-out bg-[crimson] font-semibold h-[45px] rounded-md text-white hover:scale-[1.02] w-[100px]"
                 type="submit"
                 disabled={loading}
               >

@@ -5,6 +5,7 @@ import Logos from "./logos/Logos";
 import Services from "./services";
 import Feedbacks from "./feedbacks";
 import WriteFeedback from "./write-feedback";
+import Footer from "./footer/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <About />
       <Feedbacks />
       <WriteFeedback />
+      <Footer />
     </div>
   );
 };
