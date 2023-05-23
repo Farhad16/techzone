@@ -32,7 +32,6 @@ function FormInput({
               size="small"
               color="primary"
               type={type}
-              autoFocus
               inputProps={{
                 className: inputClassName,
               }}
